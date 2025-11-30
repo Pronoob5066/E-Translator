@@ -1,0 +1,132 @@
+
+
+
+<html>
+    
+<head>
+    <title>Outlook</title>
+    <style>
+        h6 {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 4px 0;
+        }
+       
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+         #subject {
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 12px;
+            border-bottom: blue 2px solid;
+            border-top: blue 2px solid ;
+        }
+        #language {
+            position: absolute;
+            top: 14px;
+            right: 20px;
+            padding: 10px 15px;
+            width: 200px;
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #langTitle {
+            position: absolute;
+            top: 17px;
+            right: 230px;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px;
+    
+        }
+        #emailHeader {
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 40px;
+            border-bottom: rgb(17, 17, 226) 3px dashed ;
+        }
+         #emailHeaderTranslated {
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 40px;
+            border-bottom: rgb(17, 17, 226) 3px dashed ;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<h2 id="subject">Test Email</h2>
+<script src="translation.js"></script>
+    <label id="langTitle" for="language">Choose a Langauge to translate</label>
+    <input type="text" id="language" name="language" />
+    <select name="language" id="language" onchange="translate_click(this.value)">
+        <option value="en">English</option>
+        <option value="es-US">Spanish</option>
+        <option value="hi-IN">Hindi</option>
+        <option value="de">German</option>
+        <option value="zh-CN">Chinese (Simplified)</option>
+        <option value="ja">Japanese</option>
+        <option value="ru">Russian</option>
+        <option value ="ta-IN">Tamil</option>
+       
+    </select>
+    
+
+
+
+
+
+<h2 id = "emailHeader">Original Email</h2>
+
+<h6>To: Girija Sivasubramanian</h6>
+<h6>From: Vishak Saravana Kumar</h6>
+<h6>Date: April 27, 2024</h6>
+
+
+<h3 id = "emailSubject">Tennis Absence</h3>
+
+<p id = "email_body">
+
+
+Hi Ms. Girija,
+
+Hope you are having a great day. I am sending this because I think I will arrive a little later than 4 for the game on Wednesday because of another commitment on that day, 
+
+Just wanted to let you guys know. 
+
+Thanks for reading!
+
+ 
+
+Your previous student,
+Vishak Saravana Kumar
+
+</p>
+
+
+<h2 id = "emailHeaderTranslated"></h2>
+
+<h6 id="toTranslated"></h6>
+<h6 id="fromTranslated"></h6>
+<h6 id="dateTranslated"></h6>
+
+<h3 id = "emailSubjectTranslated"></h3>
+
+<p id = "translated_email_body">
+
+</p>
+
+</body>
+</html>
